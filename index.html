@@ -4,11 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trang chủ</title>
+  <link rel="shortcut icon" href="assets/img/logo/shop.svg" type="image/x-icon">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/layout/style.css">
 </head>
 <body>
-  <h1>init</h1>
+  <div class="topnav">
+    <div class="container topnav-flex">
+      <div class="brandNav">
+        <a href="#">
+          <img src="assets/img/logo/shop.svg" alt="logoShop" style="height: 30px;">
+          <span class="brandName">Furniture.</span>
+        </a>
+      </div>
 
+      <div class="collapseNav">
+        <div class="navigation">
+            <a href="#home" class="active" style="opacity: 1;">Trang chủ
+              <div class="underline"></div>
+            </a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Danh mục sản phẩm</a>
+            <a href="#">Giới thiệu</a>
+        </div>
+  
+        <div class="userNav">
+          <a href="#"><img src="assets/img/logo/user.svg" alt="logoUser"></a>
+          <a href="#"><img src="assets/img/logo/cart.svg" alt="logoCart"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
   <script type="module" src="./assets/js/layout/script.js"></script>
 </body>
 </html>

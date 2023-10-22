@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: #6a6a6a;
+  font-size: 14px;
+  background-color: #eff2f1; 
+}
+
+/*! top nav */
+.topnav {
+  overflow: hidden;
+  background-color: #3b5d50 !important;
+  width: 100%;
+  padding: 20px;
+}
+
+.topnav .topnav-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav .topnav-flex .collapseNav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topnav .topnav-flex .collapseNav .navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.topnav .topnav-flex  a {
+  color: #ffffff !important;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+.topnav .topnav-flex .collapseNav .navigation a {
+  opacity: 0.5;
+}
+
+.topnav .topnav-flex .collapseNav .navigation a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  right: 8px;
+  margin: auto;
+  background: #f9bf29;
+  height: 5px;
+  width: calc(100% - 46px);
+  opacity: 1;
+  visibility: hidden;
+}
+
+.topnav .topnav-flex .collapseNav .navigation .underline {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  right: 8px;
+  margin: auto;
+  background: #f9bf29;
+  height: 5px;
+  width: calc(100% - 46px);
+  opacity: 1;
+}
+
+.topnav .topnav-flex .collapseNav .navigation a:hover:before {
+  visibility: visible;
+}
+
+.topnav .topnav-flex .collapseNav .navigation a:hover {
+  opacity: 1;
+  color: white;
+}
+
+.topnav .topnav-flex .collapseNav .userNav {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.topnav .topnav-flex .collapseNav .userNav a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.topnav .topnav-flex .brandNav {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.topnav .topnav-flex .brandNav a {
+  display: flex;
+  align-items: center;
+}
+
+.topnav .topnav-flex .brandNav .brandName {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/*! end top nav */
