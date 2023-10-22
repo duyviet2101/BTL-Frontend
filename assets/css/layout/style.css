@@ -36,6 +36,51 @@ body {
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 800px) {
+  .topnav .topnav-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .topnav .topnav-flex  a {
+    text-align: left !important;
+  }
+
+  .topnav .topnav-flex .collapseNav {
+    display: none;
+  }
+
+  .topnav .topnav-flex .collapseNav.show {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+
+  .topnav .topnav-flex .collapseNav.show .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topnav .topnav-flex .toggle-button-navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .topnav .topnav-flex .toggle-button-navbar img {
+    display: block !important;
+    cursor: pointer;
+    color: white;
+  }
+
+  .topnav .topnav-flex .collapseNav.show .userNav {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+  }
+}
+
 .topnav .topnav-flex .collapseNav .navigation {
   display: flex;
   justify-content: flex-end;
@@ -54,35 +99,37 @@ body {
   opacity: 0.5;
 }
 
-.topnav .topnav-flex .collapseNav .navigation a:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 8px;
-  right: 8px;
-  margin: auto;
-  background: #f9bf29;
-  height: 5px;
-  width: calc(100% - 46px);
-  opacity: 1;
-  visibility: hidden;
-}
-
-.topnav .topnav-flex .collapseNav .navigation .underline {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 8px;
-  right: 8px;
-  margin: auto;
-  background: #f9bf29;
-  height: 5px;
-  width: calc(100% - 46px);
-  opacity: 1;
-}
-
-.topnav .topnav-flex .collapseNav .navigation a:hover:before {
-  visibility: visible;
+@media screen and (min-width: 800px) {
+  .topnav .topnav-flex .collapseNav .navigation a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    margin: auto;
+    background: #f9bf29;
+    height: 5px;
+    width: calc(100% - 46px);
+    opacity: 1;
+    visibility: hidden;
+  }
+  
+  .topnav .topnav-flex .collapseNav .navigation .underline {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    margin: auto;
+    background: #f9bf29;
+    height: 5px;
+    width: calc(100% - 46px);
+    opacity: 1;
+  }
+  
+  .topnav .topnav-flex .collapseNav .navigation a:hover:before {
+    visibility: visible;
+  }
 }
 
 .topnav .topnav-flex .collapseNav .navigation a:hover {
