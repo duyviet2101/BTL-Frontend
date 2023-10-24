@@ -169,17 +169,12 @@ body {
     transition: .15s all ease-out;
   }
 
-  .topnav .topnav-flex .collapseNav .navigation .underline {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 8px;
-    right: 8px;
-    margin: auto;
-    background: #f9bf29;
-    height: 5px;
-    width: calc(100% - 46px);
+  .topnav .topnav-flex .collapseNav .navigation a.active {
     opacity: 1;
+  }
+
+  .topnav .topnav-flex .collapseNav .navigation a.active::before {
+    width: calc(100% - 46px);
   }
 
   .topnav .topnav-flex .collapseNav .navigation a:hover:before {

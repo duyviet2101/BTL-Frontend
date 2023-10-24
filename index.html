@@ -8,60 +8,19 @@
   <link rel="shortcut icon" href="assets/img/logo/shop.svg" type="image/x-icon">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/layout/style.css">
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
-  <div class="topnav">
-    <div class="container topnav-flex">
-      <div class="brandNav">
-        <a href="#">
-          <img src="assets/img/logo/shop.svg" alt="logoShop" style="height: 30px;">
-          <span class="brandName">Furniture.</span>
-        </a>
-      </div>
+  <!-- topnav (get _topnav.html by js) -->
+  <div class="topnav"></div>
+  <!-- end topnav (get _topnav.html by js) -->
 
-      <div class="toggle-button-navbar">
-        <img src="assets/img/logo/toggle-menu.svg" alt="toggle" style="height: 30px; display: none">
-      </div>
+  <!-- wall (get _wall.html by js) -->
+  <div class="wall"></div>
+  <!-- end wall (get _wall.html by js) -->
 
-      <div class="collapseNav">
-        <div class="navigation">
-          <a href="#home" class="active" style="opacity: 1;">Trang chủ
-            <div class="underline"></div>
-          </a>
-          <a href="#">Sản phẩm</a>
-          <a href="#">Danh mục sản phẩm</a>
-          <a href="#">Giới thiệu</a>
-        </div>
-
-        <div class="userNav">
-          <a href="#"><img src="assets/img/logo/user.svg" alt="logoUser"></a>
-          <a href="#"><img src="assets/img/logo/cart.svg" alt="logoCart"></a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="wall">
-    <div class="container wall-flex">
-      <div class="content-wall">
-        <h1 class="head-title">Đây là Slogan của shop</h1>
-        <p class="sub-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsa corrupti neque
-          officia animi laborum accusamus fuga expedita! Eligendi quos eaque sint alias voluptates facere iure id
-          tempora, atque distinctio.</p>
-        <p>
-          <a href="#" class="button button-hightlight">Đăng nhập</a>
-          <a href="#" class="button button-simple">Đăng ký</a>
-        </p>
-      </div>
-
-      <div class="img-wall">
-        <img src="assets/img/couch.png" alt="couch">
-      </div>
-    </div>
-  </div>
-
+  <!-- sản phẩm nổi bật -->
   <div class="product-container">
     <div class="container product-flex">
       <div class="column-flex-4 intro-section">
@@ -115,9 +74,71 @@
       </div>
     </div>
   </div>
+  <!-- end sản phẩm nổi bật -->
+
+  <div class="why-choose">
+    <div class="container why-choose-flex">
+      <div class="column column-1">
+        <h2 class="section-title">
+          Tại sao bạn nên chọn chúng tôi?
+        </h2>
+        <p class="sub-content-dark">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum.
+        </p>
+        <div class="container-flex-4-item">
+          <div class="item">
+            <div class="content-item">
+              <div class="icon">
+                <img src="assets/img/truck.svg" alt="">
+              </div>
+              <h6><b>Vận chuyển nhanh & miễn phí</b></h6>
+              <p class="sub-content-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laboriosam,
+                libero molestias accusantium sit ullam rerum maxime.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content-item">
+              <div class="icon">
+                <img src="assets/img/bag.svg" alt="">
+              </div>
+              <h6><b>Dễ dàng mua sắm</b></h6>
+              <p class="sub-content-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laboriosam,
+                libero molestias accusantium sit ullam rerum maxime.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content-item">
+              <div class="icon">
+                <img src="assets/img/support.svg" alt="">
+              </div>
+              <h6><b>Hỗ trợ 24/7</b></h6>
+              <p class="sub-content-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laboriosam,
+                libero molestias accusantium sit ullam rerum maxime.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content-item">
+              <div class="icon">
+                <img src="assets/img/return.svg" alt="">
+              </div>
+              <h6><b>Đổi trả miễn phí</b></h6>
+              <p class="sub-content-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laboriosam,
+                libero molestias accusantium sit ullam rerum maxime.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column column-2">
+        <div class="img-decor">
+          <img src="assets/img/why-choose-us-img.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
   <script type="module" src="./assets/js/layout/script.js"></script>
+  <script type="module" src="./assets/js/index.js"></script>
 </body>
 
 </html>
