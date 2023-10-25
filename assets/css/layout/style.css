@@ -72,7 +72,6 @@ body {
 
 /*! top nav */
 .topnav {
-  overflow: hidden;
   background-color: #3b5d50 !important;
   width: 100%;
   padding: 20px 0;
@@ -86,6 +85,7 @@ body {
 .topnav .topnav-flex .collapseNav {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -107,14 +107,27 @@ body {
 
   .topnav .topnav-flex .collapseNav.show {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     flex-basis: 100%;
     transition: .15s all ease-out;
+    justify-content: flex-start;
   }
 
   .topnav .topnav-flex .collapseNav.show .navigation {
     display: flex;
     flex-direction: column;
+    flex-basis: 100%;
+  }
+
+  .topnav .topnav-flex .collapseNav.show .search-input {
+    flex-basis: 100% !important;
+    justify-content: flex-start !important;
+  }
+
+  .topnav .topnav-flex .collapseNav .search-input form {
+    justify-content: flex-start !important;
+    padding: 0 16px;
   }
 
   .topnav .topnav-flex .toggle-button-navbar {
@@ -152,6 +165,15 @@ body {
 
 .topnav .topnav-flex .collapseNav .navigation a {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 992px) {
+  .topnav .topnav-flex .collapseNav .userNav {
+    flex-basis: 40%;
+  }
+  .topnav .topnav-flex .collapseNav .search-input {
+    flex-basis: 0% !important;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -192,12 +214,46 @@ body {
   display: flex;
   justify-content: flex-end;
   text-align: center;
+  position: relative;
 }
 
 .topnav .topnav-flex .collapseNav .userNav a {
   text-decoration: none;
   color: white;
   text-align: center;
+  cursor: pointer;
+}
+
+.topnav .topnav-flex .collapseNav .search-input {
+  flex-basis: 100%;
+  padding: 8px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topnav .topnav-flex .collapseNav .search-input form {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 100%;
+}
+
+.topnav .topnav-flex .collapseNav button {
+  background-color: #dce5e4;
+  border-radius: 10px;
+  padding: 3px 5px;
+  border: none;
+}
+
+.topnav .topnav-flex .collapseNav button a {
+  padding: 3px !important;
+}
+
+.topnav .topnav-flex .collapseNav input {
+  padding: 3px 10px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
+  flex-basis: 40%;
 }
 
 .topnav .topnav-flex .brandNav {
@@ -224,6 +280,7 @@ body {
   padding: calc(4rem - 30px) 0 4rem 0;
   background-color: #3b5d50;
   color: #ffffff;
+  position: relative;
 }
 
 .wall .wall-flex {
@@ -395,12 +452,12 @@ body {
 .footer {
   background-color: #fff;
   position: relative;
-  padding: 80px 0;
+  padding-top: 112px;
 }
 
 .footer .footer-img {
   position: absolute;
-  top: -145px;
+  top: -150px;
   right: 0;
 }
 
