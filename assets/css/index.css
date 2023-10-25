@@ -154,6 +154,10 @@
   transform: translate(-40%, -40%);
 }
 
+.we-help-flex .column-2 .list-4 {
+  padding-bottom: 24px;
+}
+
 @media screen and (max-width: 992px) {
   .we-help-flex .column {
     flex-basis: 100%;
@@ -217,6 +221,12 @@
   font-weight: bold;
   margin-bottom: 12px;
   font-style: italic;
+}
+
+@media screen and (max-width: 992px) {
+  .feedback .feedback-flex .item {
+    flex-basis: 100%;
+  }
 }
 
 /* !end feedback */
