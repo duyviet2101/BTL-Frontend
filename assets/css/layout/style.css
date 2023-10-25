@@ -21,7 +21,7 @@ body {
 
 /** title, sub-content... */
 .sub-content {
-  opacity: 0.5;
+  opacity: 0.7;
   color: #ffffff;
 }
 
@@ -39,6 +39,7 @@ body {
 .section-title {
   color: #2f2f2f;
   margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
 /**end  title, sub-content... */

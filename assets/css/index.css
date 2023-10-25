@@ -168,3 +168,55 @@
   }
 }
 /* !end we-help */
+
+/* !feedback */
+.feedback {
+  padding: 112px 0;
+}
+
+.feedback .title {
+  text-align: center;
+}
+
+.feedback .feedback-flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feedback .feedback-flex .item {
+  flex-basis: 47%;
+  background-color: #dce5e4;
+  width: 100%;
+  border-radius: 20px;
+  padding: 12px;
+  margin: 12px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback .feedback-flex .item .avatar {
+  flex-basis: 40%;
+  padding: 12px;
+}
+
+.feedback .feedback-flex .item .avatar img {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.feedback .feedback-flex .item .review {
+  flex-basis: 60%;
+  padding: 12px;
+}
+
+.feedback .feedback-flex .item .review .author {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+/* !end feedback */
