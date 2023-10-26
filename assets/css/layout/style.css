@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  overflow: hidden;
+}
+
 div {
   box-sizing: border-box;
 }
@@ -285,6 +289,7 @@ a {
   background-color: #3b5d50;
   color: #ffffff;
   position: relative;
+  overflow: hidden;
 }
 
 .wall .wall-flex {

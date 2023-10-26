@@ -16,20 +16,21 @@
 
 .main-grid .main .categories {
   display: flex;
-  flex-wrap: unset;
+  flex-wrap: wrap;
   padding: 24px 0;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .main-grid .main .categories .box {
   display: flex;
+  flex-wrap: wrap;
   /* min-width: min-content; */
 }
 
 .main-grid .main .categories .box .category {
   padding: 5px 24px;
   font-weight: 700;
-  /* min-width: 100px; */
+  min-width: 100px;
 }
 
 .main-grid .aside {
