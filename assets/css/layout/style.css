@@ -171,7 +171,7 @@ a {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .topnav .topnav-flex .collapseNav .userNav {
     flex-basis: 40%;
   }
@@ -180,7 +180,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .topnav .topnav-flex .collapseNav .navigation a:before {
     content: "";
     position: absolute;
@@ -435,7 +435,7 @@ a {
   height: 35px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .product-flex .column-flex-4.intro-section {
     flex-basis: 100%;
   }
@@ -445,7 +445,7 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .product-flex .column-flex-4 {
     flex-basis: 100%;
   }
