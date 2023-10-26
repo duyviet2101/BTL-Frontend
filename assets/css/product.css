@@ -11,19 +11,20 @@
 }
 
 .main-grid .main {
-  max-width: 100vw;
+  max-width: 85vw!important;
 }
 
 .main-grid .main .categories {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: unset;
   padding: 24px 0;
   overflow: auto;
+  max-width: 83vw !important;
 }
 
 .main-grid .main .categories .box {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* min-width: min-content; */
 }
 
