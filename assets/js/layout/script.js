@@ -1,5 +1,8 @@
 fetch('_footer.html')
   .then(response => response.text())
   .then(data => {
-    document.querySelector('.footer').innerHTML = data;
+    const footer = document.querySelector('.footer');
+    if (footer) {
+      footer.innerHTML = data;
+    }
   });

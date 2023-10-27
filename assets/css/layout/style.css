@@ -56,6 +56,12 @@ a {
   font-size: larger;
   padding: 12px 30px;
   border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1a684a;
+  color: #fff;
 }
 
 .button-hightlight {
