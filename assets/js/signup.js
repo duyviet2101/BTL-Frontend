@@ -58,7 +58,6 @@ for (const input of inputs) {
       if (!emailRegex.test(input.value)) {
         parent.classList.add('invalid')
         parent.setAttribute('data-error', 'Email không hợp lệ!(example@gmail.com)')
-        console.log(parent)
       } else {
         parent.classList.remove('invalid')
       }
@@ -94,18 +93,15 @@ for (const input of inputs) {
     let isOk = true
     for (const item of inputs) {
       if (item.type === 'checkbox' && !item.checked) {
-        console.log(item)
         isOk = false
         break
       }
       if (item.closest('.group-input').classList.contains('invalid')) {
         isOk = false
-        console.log(item)
         break
       }
     }
     // !end check full input
-    console.log(isOk)
     if (isOk) {
       buttonSignup.classList.remove('disabled')
     } else {
