@@ -6,7 +6,9 @@ const getTopNav = (currentPageId) => {
       const topNav = document.querySelector('.topnav')
       topNav.innerHTML = data
 
-      topNav.querySelector(`#${currentPageId}`).classList.add('active')
+      if (currentPageId) {
+        topNav.querySelector(`#${currentPageId}`).classList.add('active')
+      }
 
       // !toggle menu responsive
       const toggleButtonMenu = document.querySelector('.toggle-button-navbar')
