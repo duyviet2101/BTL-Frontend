@@ -109,3 +109,22 @@ for (const input of inputs) {
     }
   })
 }
+
+
+//! show thong tin dang ky
+const signupForm = document.querySelector('.form-signup')
+if (signupForm) {
+  signupForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const data = `
+      Họ tên: ${signupForm.name.value}
+      Tên đăng nhập: ${signupForm.username.value}
+      Email: ${signupForm.email.value}
+      Mật khẩu: ${signupForm.password.value}
+    `
+    const submit = confirm(data)
+    if (submit) {
+      window.location.href = 'index.html'
+    }
+  })
+}
