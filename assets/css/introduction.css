@@ -50,8 +50,15 @@
 
 .container-flex-4-item .item {
   flex-basis: 50%;
-  padding: 0 12px;
+  padding: 12px;
   position: relative;
+  border-radius: 10px;
+  transition: all .3s ease;
+}
+
+.container-flex-4-item .item:hover {
+  background-color: #aaaaaa49;
+  transform: translateY(-10px);
 }
 
 .container-flex-4-item .item .icon {
@@ -83,80 +90,6 @@
 
 /* !end why-choose */
 
-/* ! slideshow sales */
-.banner {
-  padding: 112px 0;
-}
-
-.banner .slideshow {
-  position: relative;
-}
-.banner .slideshow .slide img{
-  width: 100%;
-  box-shadow: 5px 10px 8px #888888;
-}
-.slide {
-  display: none;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  /* margin-top: -22px; */
-  padding: 12px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  transform: translateY(-50%);
-  top: 50%;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  left: 0;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active-slide, .dot:hover {
-  background-color: #717171;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.dots {
-  text-align: center;
-  margin-top: 10px;
-}
-/* !end slideshow sales */
 
 /* !feedback */
 .feedback {
@@ -176,14 +109,19 @@
 
 .feedback .feedback-flex .item {
   flex-basis: 47%;
-  background-color: #aaaaaa49;
+  background-color: #aaaaaa2d;
   width: 100%;
   border-radius: 20px;
   padding: 12px;
   margin: 12px;
-
   display: flex;
   flex-wrap: wrap;
+  transition: all .3s ease;
+}
+
+.feedback .feedback-flex .item:hover {
+  background-color: #aaaaaa54;
+  transform: translateY(-10px);
 }
 
 .feedback .feedback-flex .item .avatar {
@@ -232,6 +170,7 @@
   top: 0;
   transition: .3s all ease;
   cursor: pointer;
+  border-radius: 10px;
 }
 .our-team-flex .item .avatar img{
   width: 100%;
