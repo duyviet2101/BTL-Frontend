@@ -5,7 +5,7 @@ getTopNav('products')
 
 getWall({
   title: "Sản phẩm",
-  subContent: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsa corrupti neque officia animi laborum accusamus fuga expedita! Eligendi quos eaque sint alias voluptates facere iure id tempora, atque distinctio.",
+  subContent: "Chúng tôi tự hào giới thiệu những sản phẩm nội thất chất lượng cao, từ sofa êm ái đến bàn ăn sang trọng và nhiều hơn nữa.",
   buttons: false,
   img: false
 })

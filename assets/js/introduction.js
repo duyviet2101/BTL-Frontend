@@ -1,11 +1,12 @@
 import getWall from './layout/wall.js'
 import getTopNav from './layout/topNav.js'
 
-getTopNav('home')
+getTopNav('introduction')
 
 getWall({
-  title: "Chào mừng bạn đến với không gian nội thất hoàn hảo!",
-  subContent: "Chào mừng bạn đến với không gian mua sắm nội thất đa dạng và đẳng cấp. Chúng tôi cung cấp những sản phẩm nội thất tinh tế và độc đáo, từ các bộ sưu tập cổ điển đến các thiết kế hiện đại, giúp bạn tạo ra không gian sống hoàn hảo theo phong cách riêng của mình. Hãy khám phá bộ sưu tập đa dạng của chúng tôi và biến ý tưởng trang trí của bạn thành hiện thực ngay hôm nay.",
+  title: 'Giới thiệu',
+  buttons: false,
+  subContent: 'Chào mừng bạn đến với cửa hàng nội thất của chúng tôi! Chúng tôi cung cấp những sản phẩm tinh tế và đa dạng, từ hiện đại đến cổ điển, để biến không gian sống của bạn thành một tác phẩm nghệ thuật sống động. Hãy khám phá bộ sưu tập của chúng tôi và bắt đầu hành trình tạo ra không gian sống lý tưởng của bạn ngay hôm nay.'
 })
 
 let slideIndex = 1;

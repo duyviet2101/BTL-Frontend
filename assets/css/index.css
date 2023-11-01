@@ -1,3 +1,79 @@
+/* ! slideshow sales */
+.banner {
+  padding: 66px 0;
+}
+
+.banner .slideshow {
+  position: relative;
+}
+.banner .slideshow .slide img{
+  width: 100%;
+  box-shadow: 5px 10px 8px #888888;
+}
+.slide {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  /* margin-top: -22px; */
+  padding: 12px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-slide, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+/* !end slideshow sales */
+
+
 /* !why-choose */
 .why-choose {
   padding: 112px 0;
@@ -173,60 +249,3 @@
 }
 /* !end we-help */
 
-/* !feedback */
-.feedback {
-  padding: 112px 0;
-}
-
-.feedback .title {
-  text-align: center;
-}
-
-.feedback .feedback-flex {
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
-  flex-wrap: wrap;
-}
-
-.feedback .feedback-flex .item {
-  flex-basis: 47%;
-  background-color: #dce5e4;
-  width: 100%;
-  border-radius: 20px;
-  padding: 12px;
-  margin: 12px;
-
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.feedback .feedback-flex .item .avatar {
-  flex-basis: 40%;
-  padding: 12px;
-}
-
-.feedback .feedback-flex .item .avatar img {
-  max-width: 100%;
-  border-radius: 50%;
-  border: 5px solid #fff;
-}
-
-.feedback .feedback-flex .item .review {
-  flex-basis: 60%;
-  padding: 12px;
-}
-
-.feedback .feedback-flex .item .review .author {
-  font-weight: bold;
-  margin-bottom: 12px;
-  font-style: italic;
-}
-
-@media screen and (max-width: 991px) {
-  .feedback .feedback-flex .item {
-    flex-basis: 100%;
-  }
-}
-
-/* !end feedback */
