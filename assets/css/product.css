@@ -44,7 +44,7 @@
   transition: all 0.2s ease;
 }
 .main-grid .main .categories .box .category:hover a {
-  color: #fff;
+  color: #ffffff;
 }
 .main-grid .main .categories .box .category:hover::before {
   width: 80%;
@@ -84,6 +84,11 @@
 
 .main-grid .aside .filter {
   padding-bottom: 24px;
+}
+
+.main-grid .aside .filter ul a:hover {
+  color: #5fa78c;
+
 }
 
 .main-grid .aside .filter ul {
