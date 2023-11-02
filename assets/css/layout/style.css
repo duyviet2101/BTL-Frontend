@@ -106,32 +106,42 @@ a {
     flex-wrap: wrap;
   }
 
+  .topnav .topnav-flex .brandNav {
+    flex-basis: 50%;
+  }
+
+  .topnav .topnav-flex .toggle-button-navbar {
+    flex-basis: 50%;
+  }
+
   .topnav .topnav-flex a {
     text-align: left !important;
   }
 
   .topnav .topnav-flex .collapseNav {
-    display: none;
-    width: 0;
-    transition: .15s all ease-out;
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    transition: .3s all ease-out;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: flex-start;
   }
 
   .topnav .topnav-flex .collapseNav.show {
     display: flex;
     /* flex-direction: column; */
-    flex-wrap: wrap;
-    flex-basis: 100%;
-    transition: .15s all ease-out;
-    justify-content: flex-start;
+    transition: .3s all ease-out;
+    height: 270px;
   }
 
-  .topnav .topnav-flex .collapseNav.show .navigation {
+  .topnav .topnav-flex .collapseNav .navigation {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
   }
 
-  .topnav .topnav-flex .collapseNav.show .search-input {
+  .topnav .topnav-flex .collapseNav .search-input {
     flex-basis: 100% !important;
     justify-content: flex-start !important;
   }
@@ -153,10 +163,11 @@ a {
     color: white;
   }
 
-  .topnav .topnav-flex .collapseNav.show .userNav {
+  .topnav .topnav-flex .collapseNav .userNav {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     text-align: center;
+    flex-basis: 100% !important;
   }
 }
 
