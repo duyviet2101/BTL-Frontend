@@ -167,7 +167,20 @@
 
   <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
   <script type="module" src="./assets/js/layout/script.js"></script>
-  <script type="module" src="./assets/js/checkout.js"></script>
+  <script type="module">
+    import getWall from './assets/js/layout/wall.js'
+    import getTopNav from './assets/js/layout/topNav.js'
+
+    getTopNav('')
+
+    getWall({
+      title: 'Thanh toán',
+      buttons:false,
+      subContent:'',
+      img:false
+    })
+
+  </script>
 </body>
 
 </html>
