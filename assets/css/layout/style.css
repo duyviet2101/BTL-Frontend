@@ -107,13 +107,13 @@ a {
     flex-wrap: wrap;
   }
 
-  .topnav .topnav-flex .brandNav {
+  /* .topnav .topnav-flex .brandNav {
     flex-basis: 50%;
-  }
+  } */
 
-  .topnav .topnav-flex .toggle-button-navbar {
+  /* .topnav .topnav-flex .toggle-button-navbar {
     flex-basis: 50%;
-  }
+  } */
 
   .topnav .topnav-flex a {
     text-align: left !important;
