@@ -9,7 +9,12 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/layout/style.css">
   <style>
-
+    .input.invalid::after {
+      content: attr(data-error);
+      color: red;
+      font-size: 12px;
+      font-style: italic;
+    }
   </style>
 </head>
 
@@ -29,40 +34,40 @@
         <div class="col-md-6 mb-5 mb-md-0">
           <h2 class="h3 mb-3 text-black">Thông tin người nhận</h2>
           <div class="p-3 p-lg-5 border bg-white">
-            <div class="form-group row">
-              <div class="col-md-6">
+            <div class="form-group mb-3 row">
+              <div class="col-md-6 input">
                 <label for="c_fname" class="text-black">Họ & Đệm <span class="text-danger">*</span></label>
-                <input type="text" class="mb-3 form-control" id="c_fname" name="c_fname">
+                <input type="text" class="form-control" id="c_fname" name="c_fname">
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 input">
                 <label for="c_lname" class="text-black">Tên <span class="text-danger">*</span></label>
-                <input type="text" class="mb-3 form-control" id="c_lname" name="c_lname">
+                <input type="text" class="form-control" id="c_lname" name="c_lname">
               </div>
             </div>
 
-            <div class="form-group row">
-              <div class="col-md-12">
+            <div class="form-group mb-3 row">
+              <div class="col-md-12 input">
                 <label for="c_address" class="text-black">Địa chỉ <span class="text-danger">*</span></label>
-                <input type="text" class="mb-3 form-control" id="c_address" name="c_address" placeholder="Địa chỉ nhận hàng...">
+                <input type="text" class="form-control" id="c_address" name="c_address" placeholder="Địa chỉ nhận hàng...">
               </div>
             </div>
 
-            <div class="form-group mt-3">
-              <input type="text" class="mb-3 form-control" placeholder="Ngách, số nhà, tầng...">
+            <div class="form-group mb-3 mt-3">
+              <input type="text" class="form-control" placeholder="Ngách, số nhà, tầng...">
             </div>
 
-            <div class="form-group row">
-              <div class="col-md-6">
+            <div class="form-group mb-3 row">
+              <div class="col-md-6 input">
                 <label for="c_email_address" class="text-black">Email <span class="text-danger">*</span></label>
-                <input type="text" class="mb-3 form-control" id="c_email_address" name="c_email_address" placeholder="Nhận thông báo về đơn hàng">
+                <input type="email" class="form-control" id="c_email_address" name="c_email_address" placeholder="Nhận thông báo về đơn hàng">
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 input">
                 <label for="c_phone" class="text-black">Số điện thoại <span class="text-danger">*</span></label>
-                <input type="text" class="mb-3 form-control" id="c_phone" name="c_phone" placeholder="Số điện thoại nhận hàng">
+                <input type="text" class="form-control" id="c_phone" name="c_phone" placeholder="Số điện thoại nhận hàng">
               </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group mb-3">
               <label for="c_order_notes" class="text-black">Ghi chú</label>
               <textarea name="c_order_notes" id="c_order_notes" cols="30" rows="10" style="min-height: 100px;" class="form-control" placeholder="Ghi chú..."></textarea>
             </div>
@@ -167,20 +172,7 @@
 
   <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
   <script type="module" src="./assets/js/layout/script.js"></script>
-  <script type="module">
-    import getWall from './assets/js/layout/wall.js'
-    import getTopNav from './assets/js/layout/topNav.js'
-
-    getTopNav('')
-
-    getWall({
-      title: 'Thanh toán',
-      buttons:false,
-      subContent:'',
-      img:false
-    })
-
-  </script>
+  <script type="module" src="./assets/js/checkout.js"></script>
 </body>
 
 </html>

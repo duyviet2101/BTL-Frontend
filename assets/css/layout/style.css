@@ -54,8 +54,7 @@ a {
 .button {
   text-decoration: none;
   font-weight: 600;
-  font-size: larger;
-  padding: 12px 30px;
+  padding: 12px 24px;
   border-radius: 30px;
   transition: all 0.3s ease;
 }
