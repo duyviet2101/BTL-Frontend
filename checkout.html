@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh toán</title>
+  <link rel="shortcut icon" href="assets/img/logo/shop.svg" type="image/x-icon">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/layout/style.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!-- topnav (get _topnav.html by js) -->
+  <div class="topnav"></div>
+  <!-- end topnav (get _topnav.html by js) -->
+
+  <!-- wall get by js -->
+  <div class="wall"></div>
+  <!-- end wall get by js -->
+
+  <!-- content -->
+  <div class="checkout">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-5 mb-md-0">
+          <h2 class="h3 mb-3 text-black">Thông tin người nhận</h2>
+          <div class="p-3 p-lg-5 border bg-white">
+            <div class="form-group row">
+              <div class="col-md-6">
+                <label for="c_fname" class="text-black">Họ & Đệm <span class="text-danger">*</span></label>
+                <input type="text" class="mb-3 form-control" id="c_fname" name="c_fname">
+              </div>
+              <div class="col-md-6">
+                <label for="c_lname" class="text-black">Tên <span class="text-danger">*</span></label>
+                <input type="text" class="mb-3 form-control" id="c_lname" name="c_lname">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-12">
+                <label for="c_address" class="text-black">Địa chỉ <span class="text-danger">*</span></label>
+                <input type="text" class="mb-3 form-control" id="c_address" name="c_address" placeholder="Địa chỉ nhận hàng...">
+              </div>
+            </div>
+
+            <div class="form-group mt-3">
+              <input type="text" class="mb-3 form-control" placeholder="Ngách, số nhà, tầng...">
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-6">
+                <label for="c_email_address" class="text-black">Email <span class="text-danger">*</span></label>
+                <input type="text" class="mb-3 form-control" id="c_email_address" name="c_email_address" placeholder="Nhận thông báo về đơn hàng">
+              </div>
+              <div class="col-md-6">
+                <label for="c_phone" class="text-black">Số điện thoại <span class="text-danger">*</span></label>
+                <input type="text" class="mb-3 form-control" id="c_phone" name="c_phone" placeholder="Số điện thoại nhận hàng">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="c_order_notes" class="text-black">Ghi chú</label>
+              <textarea name="c_order_notes" id="c_order_notes" cols="30" rows="10" style="min-height: 100px;" class="form-control" placeholder="Ghi chú..."></textarea>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+
+          <div class="row mb-5">
+            <div class="col-md-12">
+              <h2 class="h3 mb-3 text-black">Mã giảm giá</h2>
+              <div class="p-3 p-lg-5 border bg-white">
+
+                <label for="c_code" class="text-black mb-3">Nhập mã giảm giá: </label>
+                <div class="input-group w-75 couponcode-wrap">
+                  <input type="text" class="form-control me-2" id="c_code" placeholder="" aria-label="Mã giảm giá" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="button-couponcode" type="button" id="button-addon2">Áp dụng</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col-md-12">
+              <h2 class="h3 mb-3 text-black">Đơn hàng của bạn</h2>
+              <div class="p-3 p-lg-5 border bg-white">
+                <table class="table site-block-order-table mb-5">
+                  <thead>
+                    <th>Sản phẩm</th>
+                    <th>Tổng</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sản phẩm 1 <strong class="mx-2">x</strong> 1</td>
+                      <td>$250.00</td>
+                    </tr>
+                    <tr>
+                      <td>Sản phẩm 2 <strong class="mx-2">x</strong>   1</td>
+                      <td>$100.00</td>
+                    </tr>
+                    <tr>
+                      <td class="text-black font-weight-bold"><strong>Tổng đơn hàng</strong></td>
+                      <td class="text-black">$350.00</td>
+                    </tr>
+                    <tr>
+                      <td class="text-black font-weight-bold"><strong>Giảm giá</strong></td>
+                      <td class="text-black">$35.00</td>
+                    </tr>
+                    <tr>
+                      <td class="text-black font-weight-bold"><strong>Tổng tiền</strong></td>
+                      <td class="text-black font-weight-bold"><strong>$315.00</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="border p-3 mb-3">
+                  <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse" href="#collapsebank" role="button" aria-expanded="false" aria-controls="collapsebank">Chuyển khoản</a></h3>
+
+                  <div class="collapse" id="collapsebank">
+                    <div class="py-2">
+                      <p class="mb-0">
+                        Chuyển khoản trực tiếp đến số tài khoản của cửa hàng. Chúng tôi sẽ kiểm tra và tạo đơn hàng.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="border p-3 mb-3">
+                  <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse" href="#collapseCOD" role="button" aria-expanded="false" aria-controls="collapseCOD">COD</a></h3>
+
+                  <div class="collapse" id="collapseCOD">
+                    <div class="py-2">
+                      <p class="mb-0">
+                        Thanh toán khi nhận hàng.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='thankyou.html'" style="background-color: black; color: white">Place Order</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- </form> -->
+    </div>
+  </div>
+  <!-- end content -->
+
+
+  <!-- footer get by js-->
+  <div class="footer"></div>
+  <!-- end footer -->
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+  <script type="module" src="./assets/js/layout/script.js"></script>
+  <script type="module" src="./assets/js/checkout.js"></script>
+</body>
+
+</html>
