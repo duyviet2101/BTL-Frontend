@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tài khoản</title>
+  <link rel="shortcut icon" href="assets/img/logo/shop.svg" type="image/x-icon">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/layout/style.css">
+  <style>
+    .wall-flex {
+      justify-content: center !important;
+    }
+
+    .content-wall {
+      text-align: center;
+    }
+
+    .main {
+      padding-bottom: 150px;
+    }
+    td.first-item {
+      width: 30%;
+      font-weight: bold;
+    }
+    td {
+      background-color: transparent !important;
+    }
+    #main {
+      padding-bottom: 66px;
+    }
+    .main-content {
+      padding: 66px 0;
+    }
+    .orders {
+      padding-bottom: 100px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    button {
+      margin: 12px 12px 0 0 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- topnav (get _topnav.html by js) -->
+  <div class="topnav"></div>
+  <!-- end topnav (get _topnav.html by js) -->
+
+  <!-- wall get by js -->
+  <div class="wall"></div>
+  <!-- end wall get by js -->
+
+  <div class="main-content">
+    <div class="container">
+      <div id="main">
+        <h3 class="section-title">
+          Thông tin tài khoản
+        </h3>
+        <div class="content" id="block-history">
+          <table class="std table">
+            <tbody>
+              <tr>
+                <td class="first-item">
+                  Họ tên:
+                </td>
+                <td>
+                  Trần Việt
+                </td>
+              </tr>
+              <tr>
+                <td class="first-item">
+                  Username:
+                </td>
+                <td>
+                  duyviet
+                </td>
+              </tr>
+              <tr>
+                <td class="first-item">
+                  Email:
+                </td>
+                <td>
+                  viet@viet.viet
+                </td>
+              <tr>
+                <td class="first-item">
+                  Điện thoại:
+                </td>
+                <td>
+                  19001000
+                </td>
+              </tr>
+              </tr>
+              <tr>
+                <td class="first-item">
+                  Địa chỉ:
+                </td>
+                <td>
+                  Hai Bà Trưng, Hà Nội
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="actions">
+          <button class="button button-hightlight-2">
+            Chỉnh sửa thông tin
+          </button>
+          <button class="button button-hightlight-2">
+            Đổi mật khẩu
+          </button>
+        </div>
+      </div>
+      <div class="orders">
+        <h3 class="section-title">
+          Lịch sử đơn hàng
+        </h3>
+        <p class="sub-content-dark">
+          Bạn chưa có đơn hàng nào.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer get by js-->
+  <div class="footer"></div>
+  <!-- end footer -->
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+  <script type="module" src="./assets/js/layout/script.js"></script>
+  <script type="module">
+    import getWall from './assets/js/layout/wall.js'
+    import getTopNav from './assets/js/layout/topNav.js'
+
+    getTopNav('')
+
+    getWall({
+      title: "Tài khoản của tôi",
+      subContent: "",
+      buttons: false,
+      img: false
+    })
+  </script>
+</body>
+
+</html>

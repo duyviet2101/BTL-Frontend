@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+}
+
 /** title, sub-content... */
 .sub-content {
   opacity: 0.7;

@@ -15,7 +15,7 @@ for (const input of inputs) {
   })
   //! end alert invalid
 
-  input.addEventListener('change', () => {
+  input.addEventListener('keyup', () => {
     const parent = input.closest('.group-input')
     // !check checkbox agreement
     if (input.id === 'agreement') {
@@ -26,7 +26,7 @@ for (const input of inputs) {
       }
     }
     // !end check checkbox agreement
-    
+
     // !check name
     if (input.id === 'name') {
       const nameRegex = /^[a-zA-Z ]{2,30}$/
@@ -51,7 +51,7 @@ for (const input of inputs) {
     }
     // !end check username
 
-    
+
     // !check email
     if (input.type === 'email') {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -108,6 +108,35 @@ for (const input of inputs) {
       buttonSignup.classList.add('disabled')
     }
   })
+
+  if (input.type === 'checkbox') {
+    input.addEventListener('click', () => {
+      const parent = input.closest('.group-input')
+      if (!input.checked) {
+        parent.classList.add('invalid')
+      } else {
+        parent.classList.remove('invalid')
+      }
+      // !check full input
+      let isOk = true
+      for (const item of inputs) {
+        if (item.type === 'checkbox' && !item.checked) {
+          isOk = false
+          break
+        }
+        if (item.closest('.group-input').classList.contains('invalid')) {
+          isOk = false
+          break
+        }
+      }
+      // !end check full input
+      if (isOk) {
+        buttonSignup.classList.remove('disabled')
+      } else {
+        buttonSignup.classList.add('disabled')
+      }
+    })
+  }
 }
 
 

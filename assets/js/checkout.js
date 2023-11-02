@@ -19,33 +19,43 @@ if (inputs && inputs.length > 0) {
       if (!value) {
         input.classList.add('invalid')
         input.setAttribute('data-error', 'Vui lòng điền!')
-      } else {
-        const type = input.querySelector('input').type
-        if (type === 'email') {
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-          if (!emailRegex.test(value)) {
-            input.classList.add('invalid')
-            input.setAttribute('data-error', 'Email không hợp lệ!(example@gmail.com)')
-            return
-          }
-        }
-        input.classList.remove('invalid')
+        document.querySelector('.submit-button').disabled = true
       }
     })
 
-    input.addEventListener('change', () => {
+    input.addEventListener('keyup', () => {
       const value = input.querySelector('input').value
       const type = input.querySelector('input').type
-      if (type === 'email') {
+      console.log(value)
+      if (value=="") {
+        console.log("vao")
+        input.classList.add('invalid')
+        input.setAttribute('data-error', 'Vui lòng điền!')
+        document.querySelector('.submit-button').disabled = true
+      } else if (type === 'email') {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
         if (!emailRegex.test(value)) {
           input.classList.add('invalid')
-          console.log('1')
           input.setAttribute('data-error', 'Email không hợp lệ!(example@gmail.com)')
         } else {
           input.classList.remove('invalid')
-          console.log('2')
         }
+      } else {
+        input.classList.remove('invalid')
+      }
+
+      let isOk = true
+      for (const input of inputs) {
+        if (input.classList.contains('invalid')) {
+          isOk = false
+          console.log(input)
+          break
+        }
+      }
+      if (isOk) {
+        document.querySelector('.submit-button').disabled = false
+      } else {
+        document.querySelector('.submit-button').disabled = true
       }
     })
   })
