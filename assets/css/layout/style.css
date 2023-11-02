@@ -1166,3 +1166,34 @@ input::-webkit-inner-spin-button {
 .checkout {
   padding: 112px 0;
 }
+
+.text-primary {
+  color: #3b5d50 !important;
+}
+
+.thankyou-icon {
+  position: relative;
+  color: #3b5d50;
+}
+
+.thankyou-icon:before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(59, 93, 80, 0.2);
+}
+
+.service .service-icon {
+  border-radius: 10px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50px;
+  flex: 0 0 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #3b5d50;
+  margin-right: 20px;
+  color: #ffffff;
+}
