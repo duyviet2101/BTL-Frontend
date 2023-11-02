@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ</title>
+  <link rel="shortcut icon" href="assets/img/logo/shop.svg" type="image/x-icon">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/layout/style.css">
+  <style>
+    .wall-flex {
+      justify-content: center !important;
+    }
+    .content-wall {
+      text-align: center;
+    }
+    .main {
+      padding: 112px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- topnav (get _topnav.html by js) -->
+  <div class="topnav"></div>
+  <!-- end topnav (get _topnav.html by js) -->
+
+  <!-- wall get by js -->
+  <div class="wall"></div>
+  <!-- end wall get by js -->
+
+  <div class="main">
+    <div class="container">
+      <img src="assets/img/sitemap.png" alt="" style="width: 100%">
+    </div>
+  </div>
+
+  <!-- footer get by js-->
+  <div class="footer"></div>
+  <!-- end footer -->
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+  <script type="module" src="./assets/js/layout/script.js"></script>
+  <script type="module">
+    import getWall from './assets/js/layout/wall.js'
+    import getTopNav from './assets/js/layout/topNav.js'
+
+    getTopNav('')
+
+    getWall({
+      title: "Sitemap",
+      subContent: "",
+      buttons: false,
+      img: false
+    })
+  </script>
+</body>
+
+</html>
