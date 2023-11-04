@@ -37,3 +37,15 @@ if (buttonSubmit) {
     }
   })
 }
+
+//! showpage
+function showPage() {
+  document.querySelector(".container-loader").style.opacity = 0;
+  setTimeout(() => {
+    document.querySelector(".container-loader").style.display = "none";
+  }, 300);
+}
+document.addEventListener("DOMContentLoaded", () => {
+  // setTimeout(showPage, 500);
+  showPage();
+});
