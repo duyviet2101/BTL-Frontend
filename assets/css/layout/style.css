@@ -787,7 +787,7 @@ button {
 .why-choose-flex .column-2 .img-decor::before {
   position: absolute;
   content: "";
-  background-image: url(../img/dots-yellow.svg);
+  background-image: url(../../img/dots-yellow.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 255px;
@@ -906,7 +906,7 @@ button {
 .imgs-grid::before {
   position: absolute;
   content: "";
-  background-image: url(../img/dots-green.svg);
+  background-image: url(../../img/dots-green.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 255px;
