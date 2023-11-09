@@ -29,12 +29,12 @@ for (const input of inputs) {
 
     // !check name
     if (input.id === 'name') {
-      const nameRegex = /^[a-zA-Z ]{2,30}$/
+      const nameRegex = /^[a-zA-ZÀ-Ỹà-ỹ ]{2,30}$/;
       if (!nameRegex.test(input.value)) {
-        parent.classList.add('invalid')
-        parent.setAttribute('data-error', 'Tên không hợp lệ! (Tối thiểu 2 ký tự, tối đa 30 ký tự, không bao gồm số)')
+        parent.classList.add('invalid');
+        parent.setAttribute('data-error', 'Tên không hợp lệ! (Tối thiểu 2 ký tự, tối đa 30 ký tự, không bao gồm số)');
       } else {
-        parent.classList.remove('invalid')
+        parent.classList.remove('invalid');
       }
     }
     // !end check name
@@ -72,6 +72,14 @@ for (const input of inputs) {
         parent.setAttribute('data-error', 'Mật khẩu không hợp lệ! (tối thiểu 8 ký tự)')
       } else {
         parent.classList.remove('invalid')
+      }
+
+      const confirmPassword = document.getElementById('confirm-password')
+      if (confirmPassword.value !== '' && input.value !== confirmPassword.value) {
+        confirmPassword.closest('.group-input').classList.add('invalid')
+        confirmPassword.closest('.group-input').setAttribute('data-error', 'Mật khẩu không khớp!')
+      } else {
+        confirmPassword.closest('.group-input').classList.remove('invalid')
       }
     }
     // !end check password
