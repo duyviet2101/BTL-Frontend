@@ -162,6 +162,9 @@
       .single-product .product-detail {
         flex-basis: 100%;
       }
+      .recommend .title::before {
+        min-width: 100%;
+      }
     }
     /* ! end responsive for single-product */
     
@@ -171,23 +174,25 @@
     }
     .recommend .section-title {
       text-align: center;
-      display: inline;
+      display: block;
+      margin: auto;
+      width: fit-content;
       position: relative;
       z-index: 1;
-      background-color: #eff2f1;
       padding: 0 20px;
+      background-color: #eff2f1;
     }
     .recommend .title {
       text-align: center;
       position: relative;
-      padding: 48px;
+      margin: 48px;
     }
-    .recommend .section-title::before {
+    .recommend .title::before {
       position: absolute;
       content: "";
       top: 50%;
       left: 50%;
-      width: 150%;
+      width: 70%;
       height: 2px;
       transform: translateX(-50%);
       background-color: #000000;
@@ -331,9 +336,7 @@
 
       <div class="recommend">
         <div class="title">
-          <h2 class="section-title">
-            Có thể bạn quan tâm
-          </h2>
+          <h2 class="section-title">Có thể bạn quan tâm</h2>
         </div>
         
         <div class="product-flex">
